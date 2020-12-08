@@ -8,9 +8,10 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t* curr_node = list, nav_tool = curr_node;
+	listint_t *curr_node = list;
+	listint_t *nav_tool = curr_node;
 
-	for (;curr_node && nav_tool && curr_node ->next;)
+	while (curr_node && nav_tool && curr_node ->next)
 	{
 		nav_tool = nav_tool->next;
 		curr_node = curr_node->next->next;
