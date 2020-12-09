@@ -8,5 +8,5 @@ if number > 0:
 elif number == 0:
     print("{:d} is zero".format(number))
 
-else
+else:
     print("{:d} is negative".format(number))
