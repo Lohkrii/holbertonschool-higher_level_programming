@@ -12,6 +12,6 @@ if last_num > 5:
         than 5".format(last_num))
 elif last_num == 0:
     print("{:d} and is zero".format(last_num))
-else:
+elif last_num < 6 and last_num != 0:
     print("{:d} and is less than 6 and not 0"
           .format(last_num))
