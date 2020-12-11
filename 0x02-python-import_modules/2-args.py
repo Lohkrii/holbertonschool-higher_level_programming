@@ -9,4 +9,4 @@ if __name__ == "__main__":
         count_arg = "arguments:"
     print("{} {}".format(len(argv) - 1, count_arg))
     for idx in range(1, len(argv)):
-        print ("{}: {}".format(idx, argv[idx]))
+        print("{}: {}".format(idx, argv[idx]))
