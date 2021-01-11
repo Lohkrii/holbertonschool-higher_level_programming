@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
-    my_product_list = []
+    product_list = []
     for idx in range(list_length):
         product = 0
         try:
@@ -12,5 +12,5 @@ def list_division(my_list_1, my_list_2, list_length):
         except IndexError:
             print("out of range")
         finally:
-            my_product_list.append(result)
-    return my_product_list
+            product_list.append(result)
+    return product_list
