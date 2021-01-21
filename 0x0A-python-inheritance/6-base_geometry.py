@@ -2,7 +2,7 @@
 """ Exception raiser of inherited class """
 
 
-def area(self):
+class BaseGeometry:
     """BaseGeometry"""
     def area(self):
         """ Exception raiser """
