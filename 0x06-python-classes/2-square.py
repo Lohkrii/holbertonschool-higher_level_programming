@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-class Square():
+"""
+Task 2
+[Class: Square, Size: 0]
+"""
+
+
+class Square:
     """Represents a square object"""
     def __init__(self, size=0):
         """Size data value initialization"""
