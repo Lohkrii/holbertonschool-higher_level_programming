@@ -5,7 +5,7 @@ Task 1
 """
 
 
-class Square():
+class Square:
 """Represents a square with size data (private)"""
     def __init__(self, size):
         """Initializing size data variable"""
