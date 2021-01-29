@@ -6,8 +6,9 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """Rectangle Class and values initializations """
-
+    """
+    Rectangle Class and values initializations 
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         """Class initialization and value assignment"""
         self.width = width
