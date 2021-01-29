@@ -35,22 +35,22 @@ class Rectangle(Base):
         """y getter"""
         return self.__y
 
-    @setter
+    @width.setter
     def width(self, my_width):
         """Width Setter"""
         self.__width = my_width
 
-    @setter
+    @height.setter
     def height(self, my_height):
         """Height setter"""
         self.__height = my_height
 
-    @setter
+    @x.setter
     def x(self, x_value):
         """x setter"""
         self.__x = x_value
 
-    @setter
+    @y.setter
     def y(self, y_value):
         """y setter"""
         self.__y = y_value
