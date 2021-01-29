@@ -11,8 +11,8 @@ class Rectangle(Base):
         """Class initialization and value assignment"""
         self.width = width
         self.height = height
-        self.x = 0
-        self.y = 0
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
