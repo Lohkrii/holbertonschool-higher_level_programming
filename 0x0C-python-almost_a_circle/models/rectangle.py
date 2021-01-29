@@ -7,7 +7,7 @@ from models.base import Base
 
 class Rectangle(Base):
     """
-    Rectangle Class and values initializations 
+    Rectangle Class and values initializations
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """Class initialization and value assignment"""
@@ -42,7 +42,7 @@ class Rectangle(Base):
         """Width Setter and checks for edge cases"""
         if type(my_width) is not int:
             raise TypeError("width must be an integer")
-        if my_width is <= 0:
+        if my_width <= 0:
             raise ValueError("width must be > 0")
         self.__width = my_width
 
@@ -51,7 +51,7 @@ class Rectangle(Base):
         """Height setter and checks for edge cases"""
         if type(my_height) is not int:
             raise TypeError("height must be an integer")
-        if my_height is <= 0:
+        if my_height <= 0:
             raise ValueError("height must be > 0")
         self.__height = my_height
 
@@ -60,7 +60,7 @@ class Rectangle(Base):
         """x setter and checks for edge cases"""
         if type(x_value) is not int:
             raise TypeError("x must be an integer")
-        if x_value is < 0:
+        if x_value < 0:
             raise ValueError("x must be >= 0")
         self.__x = x_value
 
@@ -69,6 +69,6 @@ class Rectangle(Base):
         """y setter and checks for edge cases"""
         if type(y_value) is not int:
             raise TypeError("y must be an integer")
-        if y_value is < 0:
+        if y_value < 0:
             raise ValueError("y must be >= 0")
         self.__y = y_value
