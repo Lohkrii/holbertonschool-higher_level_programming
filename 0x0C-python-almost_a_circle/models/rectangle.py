@@ -4,6 +4,7 @@ Rectangle Class Initialization
 """
 from models.base import Base
 
+
 class Rectangle(Base):
     """Rectangle Class and values initializations """
 
