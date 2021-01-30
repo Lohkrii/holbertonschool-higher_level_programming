@@ -82,7 +82,7 @@ class Rectangle(Base):
         for jidx in range(self.y):
             print('')
         for idx in range(self.height):
-            for lidx range(self.x):
+            for lidx in range(self.x):
                 print(" ", end="")
             for cidx in range(self.width):
                 print('#', end='')
