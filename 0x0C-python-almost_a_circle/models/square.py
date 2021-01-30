@@ -33,13 +33,16 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """Update Attributes"""
+        if not args and not kwargs:
+            return
         if len(args) != 0:
             my_att_list = ["id", "size", "x", "y"]
             for idx, attr in enumerate(args):
                 setattr(self, att_list[idx], attr)
         else:
-            for key, value in kwargs.items():
-                setattr(self, key, value)
+            for kw, value in kwargs.items():
+                if hasattr(self, kw)
+                setattr(self, kw, value)
 
     def to_dictionary(self):
         """return the object as a dictionar"""
