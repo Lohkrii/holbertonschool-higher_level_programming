@@ -38,7 +38,7 @@ class Square(Rectangle):
         if len(args) != 0:
             my_att_list = ["id", "size", "x", "y"]
             for idx, attr in enumerate(args):
-                setattr(self, att_list[idx], attr)
+                setattr(self, my_att_list[idx], attr)
         else:
             for key, value in kwargs.items():
                 if hasattr(self, key):
@@ -50,5 +50,5 @@ class Square(Rectangle):
         my_att_list = ["id", "size", "x", "y"]
         for key in my_att_list:
             value = getattr(self, key)
-            new_dict[key] = value
+            my_dict[key] = value
         return my_dict
