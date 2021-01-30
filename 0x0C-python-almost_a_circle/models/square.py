@@ -40,9 +40,9 @@ class Square(Rectangle):
             for idx, attr in enumerate(args):
                 setattr(self, att_list[idx], attr)
         else:
-            for kw, value in kwargs.items():
-                if hasattr(self, kw)
-                setattr(self, kw, value)
+            for key, value in kwargs.items():
+                if hasattr(self, key)
+                setattr(self, key, value)
 
     def to_dictionary(self):
         """return the object as a dictionar"""
