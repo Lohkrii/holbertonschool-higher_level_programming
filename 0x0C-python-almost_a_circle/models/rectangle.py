@@ -91,3 +91,10 @@ class Rectangle(Base):
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}"\
             .format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args):
+        if not args:
+            return None
+        my_atr_list = ["id", "width", "height", "x", "y"]
+        for idx, attribute in enumerate(args):
+            setattr(self, my_atr_list[idx], attribute)
