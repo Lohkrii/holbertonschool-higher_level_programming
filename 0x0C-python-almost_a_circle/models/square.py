@@ -30,3 +30,22 @@ class Square(Rectangle):
     def __str__(self):
         return "[Square] ({}) {}/{} - {}"\
             .format(self.id, self.x, self.y, self.width)
+
+    def update(self, *args, **kwargs):
+        """Update Attributes"""
+        if len(args) != 0:
+            my_att_list = ["id", "size", "x", "y"]
+            for idx, attr in enumerate(args):
+                setattr(self, att_list[idx], attr)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """return the object as a dictionar"""
+        my_dict = {}
+        my_att_list = ["id", "size", "x", "y"]
+        for key in my_att_list:
+            value = getattr(self, key)
+            new_dict[key] = value
+        return my_dict
