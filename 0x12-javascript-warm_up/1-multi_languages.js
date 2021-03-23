@@ -1,4 +1,4 @@
-#!/usr/bin/nodejs
+#!/usr/bin/node
 // Prints 3 lines of string.
 
 fVar = 'C is fun';
