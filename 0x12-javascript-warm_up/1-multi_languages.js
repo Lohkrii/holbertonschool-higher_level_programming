@@ -1,6 +1,6 @@
 #!/usr/bin/nodejs
 // Prints 3 lines of string.
-fVar = 'C is fun';
-sVar = '\nPython is cool';
-tVar = '\nJavascript is amazing';
+let fVar = 'C is fun';
+let sVar = '\nPython is cool';
+let tVar = '\nJavascript is amazing';
 console.log(fVar, sVar, tVar);
