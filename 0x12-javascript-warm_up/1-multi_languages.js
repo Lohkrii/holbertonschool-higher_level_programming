@@ -2,7 +2,9 @@
 // Prints 3 lines of string.
 
 fVar = 'C is fun';
-sVar = '\nPython is cool';
-tVar = '\nJavascript is amazing';
+sVar = 'Python is cool';
+tVar = 'Javascript is amazing';
 
-console.log(fVar, sVar, tVar);
+console.log(fVar);
+console.log(sVar);
+console.log(tVar);
