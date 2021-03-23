@@ -7,6 +7,6 @@ if (isNaN(isInt)) {
     for (let cidx = 1; cidx <= isInt; cidx++) {
       process.stdout.write('x');
     }
-    console.log();
+    process.stdout.write('\n');
   }
 }
