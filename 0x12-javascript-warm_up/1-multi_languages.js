@@ -1,6 +1,6 @@
 #!/usr/bin/nodejs
 // Prints 3 lines of string.
-const fVar = 'C is fun';
-const sVar = '\nPython is cool';
-const tVar = '\nJavaScript is amazing';
-console.log(fVar, sVar, tVar);
+const myArr = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+for (let idx = 0; idx < myArr.length; idx++) {
+  console.log(myArr[idx]);
+}
