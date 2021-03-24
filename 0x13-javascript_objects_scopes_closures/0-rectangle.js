@@ -1,4 +1,4 @@
-#!/usr/bin/nodejs
+#!/usr/bin/node
 class Rectangle {
 }
 
