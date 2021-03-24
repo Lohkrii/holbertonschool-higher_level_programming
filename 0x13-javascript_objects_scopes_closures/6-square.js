@@ -5,7 +5,7 @@ class Square extends iSquare {
     super(area, area);
   }
 
-  charPrint(c = 'X') {
+  charPrint (c = 'X') {
     for (let idx = 0; idx < this.height; idx++) {
       console.log(c.repeat(this.width));
     }
