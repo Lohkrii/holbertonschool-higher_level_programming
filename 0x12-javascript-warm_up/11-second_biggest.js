@@ -1,8 +1,6 @@
 #!/usr/bin/nodejs
-const args = process.argv.slice(2);
-let x = 0;
-if (!(args.length <= 1)) {
-  args.sort();
-  x = args[args.length - 2];
+if (process.argv.length <= 3) {
+  console.log(0);
+} else {
+  console.log(process.argv.sort().reverse()[1]);
 }
-console.log(x);
