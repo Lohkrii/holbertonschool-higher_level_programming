@@ -1,5 +1,5 @@
 #!/usr/bin/nodejs
-let Int = parseInt(process.argv[2]);
+const Int = parseInt(process.argv[2]);
 function factorial (x) {
   if ((x === 0) || (isNaN(x))) {
     return 1;
