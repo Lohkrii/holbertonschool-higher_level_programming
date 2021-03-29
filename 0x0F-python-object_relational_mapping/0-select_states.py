@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 import MySQLdb
 import sys
-def connectToDB()
+
+
+def connectToDB():
     db = MySQLdb.connect(host=localhost,
                          user=sys.argv(1),
                          passwd=sys.argv(2),
