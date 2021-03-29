@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+""" Selects stats by ascending order """
+import MySQLdb
+import sys
 
 
-def connectToDB():
+if __name__ == '__main__':
     db = MySQLdb.connect(host='localhost', port=3306,
                          user=sys.argv[1], passwd=sys.argv[2],
                          db=sys.argv[3])
@@ -14,8 +17,3 @@ def connectToDB():
 
     cur.close()
     db.close()
-
-if __name__ == '__main__':
-    import MySQLdb
-    import sys
-    connectToDB()
