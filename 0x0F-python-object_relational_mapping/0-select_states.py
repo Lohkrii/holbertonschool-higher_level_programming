@@ -18,4 +18,4 @@ def connectToDB():
     cur.close()
     conn.close()
 if __name__ == '__main__':
-    connecttoDB()
+    connectToDB()
