@@ -12,7 +12,7 @@ def connectToDB():
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
-    query_rows = cur.fetchall()
+    rows = cur.fetchall()
     for row in rows:
         print(row)
     cur.close()
